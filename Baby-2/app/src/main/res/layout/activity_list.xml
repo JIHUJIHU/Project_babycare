@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="right|center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="100dp"
+                android:layout_height="17dp"
+                android:text="name"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/join_day"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:text="date"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/user_img2"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/user_name2"
+                android:layout_width="100dp"
+                android:layout_height="17dp"
+                android:text="name"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/join_day2"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:text="date"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/user_img3"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/user_name3"
+                android:layout_width="100dp"
+                android:layout_height="17dp"
+                android:text="name"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/join_day3"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:text="date"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="추가" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:divider="#ca9c9c"
+        android:dividerHeight="1.5dp"
+        android:choiceMode="singleChoice"
+        android:background="#d6d6d6"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/write"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:text="일 기 쓰 기"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kimminseong.babyhelper.MainActivity"
+    android:background="#e7e6e6">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="Baby Helper"
+        android:gravity="center"
+        android:textSize="17pt"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="아이디"
+        android:gravity="center|left"
+        android:textSize="13pt"
+        android:layout_alignTop="@+id/idEdit"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/logo"
+        android:layout_alignStart="@+id/pwEdit" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="비밀번호"
+        android:gravity="center|left"
+        android:textSize="13pt"
+        android:id="@+id/pw"
+        android:layout_alignTop="@+id/pwEdit"
+        android:layout_alignStart="@+id/id" />
+
+    <EditText
+        android:id="@+id/pwEdit"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/idEdit"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:text="로그인"
+        android:gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pw"
+        android:layout_alignStart="@+id/pw"
+        android:layout_marginTop="62dp" />
+
+    <Button
+        android:id="@+id/join_button"
+        android:text="회원가입"
+        android:gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/login_button"
+        android:layout_alignBottom="@+id/login_button"
+        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/login_button" />
+
+
+</RelativeLayout>

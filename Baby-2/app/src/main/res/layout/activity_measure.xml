@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:text="Baby Helper"
+        android:gravity="center"
+        android:textSize="13pt"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/black"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="키측정"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#c2c2c2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/distance_on"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="ON"
+            android:layout_marginRight="50dp"/>
+        <Button
+            android:id="@+id/distance_off"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="OFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/black"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="온도측정"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/wtmp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#c2c2c2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/wtemp_on"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="ON"
+            android:layout_marginRight="50dp"/>
+        <Button
+            android:id="@+id/wtemp_off"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="OFF"/>
+    </LinearLayout>
+
+</LinearLayout>
